@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/change_ip_menu" android:title="Update IP Address"/>
+    <item android:id="@+id/dtr_menu" android:title="Daily Time Record"/>
+    <item android:id="@+id/location_menu" android:title="Area of Assignments"/>
+    <item android:id="@+id/leave_menu" android:title="Leave"/>
+    <item android:id="@+id/so_menu" android:title="Office Order"/>
+    <item android:id="@+id/cto_menu" android:title="Compensatory Time Off"/>
+    <item android:id="@+id/flag_menu" android:title="Flag Attendance"/>
+   <item android:id="@+id/reset_menu" android:title="Reset DTR Password" android:visible="false"/>
+    <item android:id="@+id/software_update_menu" android:title="Software Update"/>
+</menu>

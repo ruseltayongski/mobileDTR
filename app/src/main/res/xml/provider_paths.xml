@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <external-path
+        name="my_images"
+        path="Android/data/com.dohro7.officemobiledtr/files/Pictures" />
+
+    <external-path
+        name="Apk"
+        path="Android/data/com.dohro7.officemobiledtr/files/Download" />
+</paths>

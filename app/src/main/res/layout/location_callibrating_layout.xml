@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/location_calibrating">
+
+    <TextView
+        android:id="@+id/location_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:padding="10dp"
+        android:text="Location/GPS calibrating..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/location_date"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location_date"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="07/01/2019"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toRightOf="@+id/location_status"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/location_time"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="02:12:20 AM"
+        android:textColor="#fff"
+        app:layout_constraintLeft_toRightOf="@+id/location_status"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/location_date" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

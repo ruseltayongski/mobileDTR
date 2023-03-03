@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">DTR</string>
+    <string-array name="leave_type">
+        <item>VACATION LEAVE</item>
+        <item>SICK LEAVE</item>
+        <item>PATERNITY LEAVE</item>
+        <item>MATERNITY LEAVE</item>
+        <item>SPECIAL LEAVE</item>
+        <item>FORCED LEAVE</item>
+
+    </string-array>
+
+    <string-array name="no_retry_message">
+        <item>Successfully uploaded</item>
+        <item>Nothing to upload</item>
+        <item>New item added</item>
+        <item>Item deleted</item>
+        <item>Please enable Location/GPS</item>
+    </string-array>
+
+    <string-array name="latitude_array">
+        <item>9.324598</item> <!--negros 1, 3m-->
+        <item>9.324568</item> <!--negros 2, 8m-->
+        <item>10.308289554184235</item> <!--refLat, 6.5m -->
+        <item>10.307250816452036</item><!-- supplyLat, 12m-->
+        <item>10.30738756635405</item><!--centerLat,47m -->
+        <item>10.30774657014178</item><!--entranceLat,16m -->
+        <item>10.307210077158915</item><!--exitLat,19m -->
+        <item>10.307673999820983</item><!--msdLat,8m -->
+        <item>10.308244</item><!--nonComLat,6m -->
+    </string-array>
+    <string-array name="longitude_array">
+        <item>123.295488</item>
+        <item>123.295589</item>
+        <item>123.89241318125381</item>
+        <item>123.89204275226837</item>
+        <item>123.89330341980981</item>
+        <item>123.89347537164254</item>
+        <item>123.89368135704788</item>
+        <item>123.89297111634774</item>
+        <item>123.907708</item>
+    </string-array>
+
+    <string name="location_acquired">Location/GPS acquired</string>
+    <string name="gps_not_enabled">Location/GPS not enabled</string>
+    <string name="location_calibrating">Location/GPS calibrating</string>
+    <string name="location_permission">Current Location permission not enabled</string>
+    <string name="location_outside">Your current location is not in the allowed premise</string>
+    <string name="location_empty">Please Update your Area of assignment</string>
+    <string name="location_office_no_area_roles">Please Call admin to update your "Area of assignment" in your DTR profile</string>
+
+    <string name="login_note"><i>Note: \n1.The Default IP Address of this version is <b>49.157.74.3/dtr</b>\n if this IP is active, there\'s no need to use <b>\'CHANGE IP\'</b> button
+        \n2. If it says \'ID not Registered\', please click <b>\'Register ID\'</b> to register</i></string>
+
+    <string name="location_mock">The application has detected a fake GPS/Location in your device, and is considered as an act of \'falsification of Daily Time Record\'. </string>
+    <string name="warning"><b>WARNING!</b></string>
+    <string name="current_ip_label">Current IP Address:\t</string>
+    <string name="default_ip">49.157.74.3</string>
+    <string name="update_ip_success">Your current IP address now is: \t</string>
+    <string name="toInstall">\"Go to your Downloads and find <b>\'dtr.apk\'</b> and click to install\"</string>
+    <string name="toDownload"><b>Please wait for the app to be connected to the web, and follow the instructions below to update your application:</b>\n1. click the button <b><i>(MobileDTR APK)</i></b> below to download the new apk\n2. wait the download to finish\n3. click the downloaded apk to install<i> (downloaded apk can be seen on your device\'s \'download\' folder)</i></string>
+</resources>

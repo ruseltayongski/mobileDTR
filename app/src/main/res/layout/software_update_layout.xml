@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/software_update_title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_software_update"
+        android:drawableRight="@drawable/ic_mobile"
+        android:gravity="center|left"
+        android:padding="10dp"
+        android:text="Software Update"
+        android:textColor="#fff"
+        android:textSize="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--UPDATED-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/software_update_updated_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/software_update_title">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/software_update_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text=""
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#bdbdbd"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Your software is up to date"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                android:textColor="#bdbdbd"
+                app:layout_constraintTop_toBottomOf="@+id/software_update_version" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <!-- NEW UPDATES-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/software_update_new_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="visible"
+
+
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/software_update_title">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/software_details_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="What's new?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/software_details_version"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="Current version: \nLatest Version:"
+                android:textStyle="italic"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                app:layout_constraintTop_toBottomOf="@+id/software_details_title" />
+
+            <TextView
+                android:id="@+id/software_details_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text=""
+                android:textSize="15sp"
+                app:layout_constraintTop_toBottomOf="@+id/software_details_version" />
+
+         <!--  <ProgressBar
+                android:id="@+id/downloading_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:indeterminate="false"
+                android:max="100"
+                android:progress="0"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"/>-->
+
+            <ProgressBar
+                android:id="@+id/downloading_progress"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+  <!--           <TextView
+                android:id="@+id/downloading_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Downloading..."
+                android:textSize="12dp"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@+id/downloading_progress" />
+-->
+            <TextView
+                android:id="@+id/software_install_instruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/toDownload"
+                android:padding="5dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Subtitle"
+                app:layout_constraintTop_toBottomOf="@+id/software_details_list" />
+<!--
+
+            <Button
+                android:id="@+id/software_details_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/bg_rectangle_black_stroke"
+                android:text="Download"
+                app:layout_constraintBottom_toBottomOf="parent" />
+-->
+
+            <WebView
+                android:id="@+id/software_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/colorPrimary"
+                app:layout_constraintBottom_toTopOf="@+id/software_retry_webview"
+                app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <Button
+                android:id="@+id/software_retry_webview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/bg_rectangle_black_stroke"
+                android:text="RETRY"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <ProgressBar
+        android:id="@+id/software_update_progressbar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/software_update_progress_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="Checking update"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@+id/software_update_progressbar" />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/software_update_progress_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="software_update_progressbar,software_update_progress_text"
+        />
+
+
+    <TextView
+        android:id="@+id/software_update_retry"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/retrybtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/software_update_retry_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="RETRY"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        app:layout_constraintTop_toBottomOf="@+id/software_update_retry"
+        />
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/software_update_retry_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="software_update_retry,software_update_retry_text"
+        android:visibility="gone"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.09" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

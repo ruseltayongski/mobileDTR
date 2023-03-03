@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/dtr_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            android:text="January 29, 2019"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!-- TODO: ADD DELETE IMAGE BUTTON -->
+        <TextView
+            android:id="@+id/am_label"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_white_stroke"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="AM"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guide_line"
+            app:layout_constraintTop_toBottomOf="@+id/dtr_date" />
+
+        <TextView
+            android:id="@+id/am_in"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_white_stroke"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="IN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guide_line_am"
+            app:layout_constraintTop_toBottomOf="@+id/am_label" />
+
+        <TextView
+            android:id="@+id/am_in_value"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/guide_line_am"
+            app:layout_constraintTop_toBottomOf="@+id/am_in" />
+
+
+        <TextView
+            android:id="@+id/am_out"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_white_stroke"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="OUT"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/guide_line_am"
+            app:layout_constraintRight_toLeftOf="@+id/guide_line"
+            app:layout_constraintTop_toBottomOf="@+id/am_label" />
+
+        <TextView
+            android:id="@+id/am_out_value"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/guide_line_am"
+            app:layout_constraintRight_toLeftOf="@+id/guide_line"
+            app:layout_constraintTop_toBottomOf="@+id/am_out" />
+
+
+        <TextView
+            android:id="@+id/pm_label"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_white_stroke"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="PM"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/guide_line"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dtr_date" />
+
+
+        <TextView
+            android:id="@+id/pm_in"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_white_stroke"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="IN"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/guide_line"
+            app:layout_constraintRight_toLeftOf="@+id/guide_line_pm"
+            app:layout_constraintTop_toBottomOf="@+id/pm_label" />
+
+        <TextView
+            android:id="@+id/pm_in_value"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/guide_line"
+            app:layout_constraintRight_toLeftOf="@+id/guide_line_pm"
+            app:layout_constraintTop_toBottomOf="@+id/pm_in" />
+
+        <TextView
+            android:id="@+id/pm_out"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_rectangle_white_stroke"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="OUT"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/guide_line_pm"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pm_label" />
+
+        <TextView
+            android:id="@+id/pm_out_value"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Subtitle"
+            android:textColor="#000"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@+id/guide_line_pm"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pm_out" />
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line_am"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line_pm"
+            android:layout_width="0px"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.75" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guide_line"
+            android:layout_width="1px"
+            android:layout_height="0px"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintGuide_percent="0.5"
+            app:layout_constraintTop_toBottomOf="@+id/dtr_date" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
